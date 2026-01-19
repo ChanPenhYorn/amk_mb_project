@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "737337961463",
+    "project_id": "mvvm-solid-principle",
+    "storage_bucket": "mvvm-solid-principle.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737337961463:android:9f36aa88c1b2a3550cdcf2",
+        "android_client_info": {
+          "package_name": "com.solid.principle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSMUH41FAQFE6tsg13f5R_a3kroWtYXeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737337961463:android:2e45e23a5372f9ba0cdcf2",
+        "android_client_info": {
+          "package_name": "com.solid.principle.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSMUH41FAQFE6tsg13f5R_a3kroWtYXeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737337961463:android:2b483c9dccaa612b0cdcf2",
+        "android_client_info": {
+          "package_name": "com.solid.principle.staging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSMUH41FAQFE6tsg13f5R_a3kroWtYXeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

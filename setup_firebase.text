@@ -1,0 +1,19 @@
+flutterfire configure \
+  --project=mvvm-solid-principle \
+  --android-package-name=com.solid.principle.dev \
+  --ios-bundle-id=com.solid.principle.dev \
+  --out=lib/firebase_options_dev.dart
+
+flutterfire configure \
+  --project=mvvm-solid-principle \
+  --android-package-name=com.solid.principle.staging \
+  --ios-bundle-id=com.solid.principle.staging \
+  --out=lib/firebase_options_staging.dart
+
+
+
+flutterfire configure \
+  --project mvvm-solid-principle \
+  --out lib/.firebase/dev/firebase_options.dart \
+  --ios-bundle-id com.solid.principle.dev \
+  --android-package-name com.solid.principle.dev

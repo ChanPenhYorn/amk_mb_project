@@ -2,6 +2,8 @@ name: amk_bank_project
 description: "A new Flutter project."
 publish_to: 'none'
 
+version: 1.0.0+1
+
 environment:
   sdk: ^3.10.7
 dependencies:
@@ -14,6 +16,8 @@ dependencies:
   flutter_flavorizr: ^2.4.1
   flutter_riverpod: any
   riverpod_annotation: any
+  firebase_core: ^4.3.0
+  package_info_plus: ^9.0.0
 
 dev_dependencies:
   flutter_test:
@@ -55,8 +59,14 @@ flavorizr:
         icon: "assets/images/amk_logo.png"
       android:
         applicationId: "com.solid.principle.dev"
+        firebase:
+          config: ".firebase/dev/google-services.json"
       ios:
         bundleId: "com.solid.principle.dev"
+        firebase:
+          config: ".firebase/dev/GoogleService-Info.plist"
+
+      
 
     staging:
       app:
@@ -64,8 +74,12 @@ flavorizr:
         icon: "assets/images/amk_logo.png"
       android:
         applicationId: "com.solid.principle.staging"
+        firebase:
+          config: ".firebase/staging/google-services.json"
       ios:
         bundleId: "com.solid.principle.staging"
+        firebase:
+          config: ".firebase/staging/GoogleService-Info.plist"
 
     prod:
       app:
@@ -73,6 +87,9 @@ flavorizr:
         icon: "assets/images/amk_logo.png"
       android:
         applicationId: "com.solid.principle"
-
+        firebase:
+          config: ".firebase/prod/google-services.json"
       ios:
         bundleId: "com.solid.principle"
+        firebase:
+          config: ".firebase/prod/GoogleService-Info.plist"
