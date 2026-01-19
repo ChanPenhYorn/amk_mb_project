@@ -1,4 +1,3 @@
-import 'package:amk_bank_project/presentation/controllers/auth/login_state.dart';
 import 'package:amk_bank_project/presentation/views/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -27,12 +26,13 @@ class LoginScreen extends ConsumerWidget {
           children: [
             if (state.isLoading) const CircularProgressIndicator(),
             if (state.error != null) Text(state.error!),
-            ElevatedButton(
-              onPressed: () => ref
-                  .read(loginProvider.notifier)
-                  .login('test@amk.com', 'password123'),
-              child: const Text('Login'),
-            ),
+            if (!state.isLoading)
+              ElevatedButton(
+                onPressed: () => ref
+                    .read(loginProvider.notifier)
+                    .login('test@amk.com', 'password123'),
+                child: const Text('Login'),
+              ),
           ],
         ),
       ),
