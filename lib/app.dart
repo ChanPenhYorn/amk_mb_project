@@ -1,6 +1,6 @@
+import 'package:amk_bank_project/presentation/views/splash/splash_screen.dart';
 import 'package:amk_bank_project/core/shared/app_theme.dart';
 import 'package:amk_bank_project/presentation/controllers/theme/theme_notifier.dart';
-import 'package:amk_bank_project/presentation/views/auth/login_screen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -20,7 +20,7 @@ class App extends ConsumerWidget {
       themeMode: themeState.isDarkMode == true
           ? ThemeMode.dark
           : ThemeMode.light,
-      home: _flavorBanner(child: LoginScreen(), show: kDebugMode),
+      home: _flavorBanner(child: const SplashScreen(), show: kDebugMode),
     );
   }
 
