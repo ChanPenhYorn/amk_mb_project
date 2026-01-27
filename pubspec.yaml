@@ -1,0 +1,102 @@
+name: amk_bank_project
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  logger: ^2.6.2
+  dropdown_button2: ^2.3.9
+  flutter_flavorizr: ^2.4.1
+  flutter_riverpod: any
+  riverpod_annotation: any
+  firebase_core: ^4.3.0
+  package_info_plus: ^9.0.0
+  flutter_svg: ^2.2.3
+  khqr_scan_package:
+    path: packages/khqr_scan_package
+  share_plus: ^12.0.1
+  skeletonizer: ^2.1.2
+  gap: ^3.0.1
+  freezed: ^3.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: any
+  riverpod_generator: any
+  mocktail: ^1.0.4
+
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/locales/
+    - assets/svg/
+    - assets/images/
+
+  fonts:
+    - family: KantumruyPro
+      fonts:
+        - asset: assets/fonts/KantumruyPro-Regular.ttf
+        - asset: assets/fonts/KantumruyPro-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/KantumruyPro-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/KantumruyPro-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/KantumruyPro-Italic.ttf
+          style: italic
+
+flavorizr:
+  ide: "vscode"
+  flavors:
+    dev:
+      app:
+        name: "AMK Dev"
+        icon: "assets/images/amk_logo.png"
+      android:
+        applicationId: "com.solid.principle.dev"
+        firebase:
+          config: ".firebase/dev/google-services.json"
+      ios:
+        bundleId: "com.solid.principle.dev"
+        firebase:
+          config: ".firebase/dev/GoogleService-Info.plist"
+
+      
+
+    staging:
+      app:
+        name: "AMK Staging"
+        icon: "assets/images/amk_logo.png"
+      android:
+        applicationId: "com.solid.principle.staging"
+        firebase:
+          config: ".firebase/staging/google-services.json"
+      ios:
+        bundleId: "com.solid.principle.staging"
+        firebase:
+          config: ".firebase/staging/GoogleService-Info.plist"
+
+    prod:
+      app:
+        name: "AMK Prod"
+        icon: "assets/images/amk_logo.png"
+      android:
+        applicationId: "com.solid.principle"
+        firebase:
+          config: ".firebase/prod/google-services.json"
+      ios:
+        bundleId: "com.solid.principle"
+        firebase:
+          config: ".firebase/prod/GoogleService-Info.plist"

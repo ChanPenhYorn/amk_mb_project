@@ -1,0 +1,71 @@
+class AppString {
+  static String get appName => "AMK";
+  static String get login => "login";
+  static String get signIn => "sign_in";
+  static String get signUp => "sign_up";
+  static String get fieldRequired => "field_required";
+  static String get invalidEmailFormat => "invalid_email_format";
+  static String get nameShouldContainEnglishCharactersOnly =>
+      "name_should_contain_english_characters_only";
+  static String get passwordMustBeAtLeast6CharactersLong =>
+      "password_must_be_at_least_6_characters_long";
+  static String get invalidPhoneNumberFormat => "invalid_phone_number_format";
+  static String get noAccountMsg => "no_account_msg";
+  static String get selfAccountOpening => "self_account_opening";
+  static String get chat => "chat";
+  static String get contactUs => "contact_us";
+  static String get aboutAmk => "about_amk";
+  static String get back => "back";
+  static String get goodMorning => "good_morning";
+  static String get accounts => "accounts";
+  static String get payments => "payments";
+  static String get localTransfer => "local_transfer";
+  static String get history => "history";
+  static String get phoneTopUp => "phone_top_up";
+  static String get overseasTransfer => "overseas_transfer";
+  static String get fastTransfer => "fast_transfer";
+  static String get fastPayment => "fast_payment";
+  static String get exploreFeatures => "explore_features";
+  static String get seeAll => "see_all";
+  static String get myPoints => "my_points";
+  static String get loanRequest => "loan_request";
+  static String get creditBureauCambodia => "credit_bureau_cambodia";
+  static String get goalSavings => "goal_savings";
+  static String get promotions => "promotions";
+  static String get home => "home";
+  static String get cards => "cards";
+  static String get others => "others";
+  static String get bankingAppThemeSettings => "banking_app_theme_settings";
+  static String get language => "language";
+  static String get fontScale => "font_scale";
+  static String get fontInterDescription => "font_inter_description";
+  static String get welcomeBankingApp => "welcome_banking_app";
+  static String get customGradientBackground => "custom_gradient_background";
+  static String get colorPalette => "color_palette";
+  static String get primary => "primary";
+  static String get primaryLight => "primary_light";
+  static String get primaryDark => "primary_dark";
+  static String get typographyPreview => "typography_preview";
+  static String get customButtons => "custom_buttons";
+  static String get primaryButton => "primary_button";
+  static String get primaryDisabled => "primary_disabled";
+  static String get withIcon => "with_icon";
+  static String get outlineButton => "outline_button";
+  static String get outlineDisabled => "outline_disabled";
+  static String get customInputFields => "custom_input_fields";
+  static String get passwordOrKhmerHint => "password_or_khmer_hint";
+  static String get customDropdownButton => "custom_dropdown_button";
+
+  static String get email => "email";
+  static String get phoneNumber => "phone_number";
+  static String get current => "current";
+  static String get displayLarge => "display_large";
+  static String get headlineMedium => "headline_medium";
+  static String get titleLarge => "title_large";
+  static String get bodyLarge => "body_large";
+  static String get bodyMedium => "body_medium";
+
+  static String get confirmPassword => "confirm_password";
+  static String get alreadyHaveAccount => "already_have_account";
+  static String get fullName => "full_name";
+}
